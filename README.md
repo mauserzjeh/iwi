@@ -29,7 +29,10 @@ if err != nil {
     log.Fatal(err)
 }
 
-// iwiFile holds the data of the .iwi file (header, info, data)
+// iwiFile holds the data of the .iwi file
+header := iwiFile.Header // access information about the header
+info := iwiFile.Info // access information about the file
+data := iwiFile.Data // access the image data that was read in (only the highest mip)
 ```
 
 The library exposes various constants to check for version and format
