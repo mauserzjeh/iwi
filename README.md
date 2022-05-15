@@ -38,7 +38,7 @@ data := iwiFile.Data // access the image data that was read in (only the highest
 The library exposes various constants to check for version and format
 ```go
 const (
-	// IWi Versions
+	// IWI Versions
 	IWI_VERSION_COD2   = 0x05 // CoD2
 	IWI_VERSION_COD4   = 0x06 // CoD4
 	IWI_VERSION_COD5   = 0x06 // CoD5
@@ -47,7 +47,7 @@ const (
 	IWI_VERSION_CODBO1 = 0x0D // CoDBO1
 	IWI_VERSION_CODBO2 = 0x1B // CoDBO2
 
-	// IWi Format
+	// IWI Format
 	IWI_FORMAT_ARGB32 = 0x01 // ARGB32
 	IWI_FORMAT_RGB24  = 0x02 // RGB24
 	IWI_FORMAT_GA16   = 0x03 // GA16
