@@ -92,22 +92,22 @@ func (o offsets) mipMaps(first int32, size int32) mipmaps {
 	for i := 0; i < len(o); i++ {
 		switch i {
 		case 0:
-			m = append(m, mipmap{
+			m[i] = mipmap{
 				offset: o[i],
 				size:   size - o[i],
-			})
+			}
 
 		case len(o) - 1:
-			m = append(m, mipmap{
+			m[i] = mipmap{
 				offset: first,
 				size:   o[i] - first,
-			})
+			}
 
 		default:
-			m = append(m, mipmap{
+			m[i] = mipmap{
 				offset: o[i],
 				size:   o[i-1] - o[i],
-			})
+			}
 		}
 	}
 
